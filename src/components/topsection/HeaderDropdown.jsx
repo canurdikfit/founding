@@ -14,7 +14,7 @@ const HeaderDropdown = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <RxDashboard
         className="text-3xl text-dark_primary dark:text-primary"
         onClick={() => setOpen(!open)}
@@ -38,9 +38,9 @@ const HeaderDropdown = () => {
         <li>
           <Link
             href="/"
-            className="text-black dark:text-white text-base font-medium flex items-center gap-3 p-2 rounded-lg"
+            className="text-[#FF4747] text-base font-medium flex items-center gap-3 p-2 rounded-lg"
           >
-            <MdOutlineDeleteOutline className="text-2xl text-[#FF4747]" />
+            <MdOutlineDeleteOutline className="text-2xl" />
             <span>Delete Account</span>
           </Link>
         </li>
@@ -60,12 +60,12 @@ const pushNav = [
   {
     icon: <TbMessage2 className="text-2xl" />,
     title: "History",
-    url: "/",
+    url: "/history",
   },
   {
     icon: <MdOutlineLeaderboard className="text-2xl" />,
     title: "Leaderboard",
-    url: "/",
+    url: "/leaderBoard",
   },
   {
     icon: <MdSecurity className="text-2xl" />,

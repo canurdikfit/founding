@@ -1,6 +1,9 @@
-import Header from "@/components/Header";
-import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
+import Header from "@/components/topsection/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
+
+import { Inter as FontSans } from "next/font/google";
+
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
@@ -9,7 +12,7 @@ const fontSans = FontSans({
 });
 
 export const metadata = {
-  title: "Foundation || A New Web3 Experience",
+  title: "Dashboard || Foundation",
   description:
     "Foundation is designed to usher newcomers into the dynamic world of Web3. With an emphasis on web3 education, practical experience and Campaigns",
 };
@@ -31,6 +34,7 @@ export default function RootLayout({ children }) {
         >
           <Header />
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

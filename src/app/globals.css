@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .swiper-pagination {
   top: 0 !important;
   bottom: unset !important;
